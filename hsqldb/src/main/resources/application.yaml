@@ -1,0 +1,12 @@
+server.port: 7001
+
+spring:
+  datasource:
+    url: jdbc:hsqldb:./build/hsqldb.db
+    driver-class-name: org.hsqldb.jdbcDriver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.HSQLDialect
