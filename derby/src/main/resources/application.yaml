@@ -1,0 +1,11 @@
+server.port: 7004
+
+spring:
+  datasource:
+    url: jdbc:derby:./build/derby.db;create=true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.DerbyDialect
