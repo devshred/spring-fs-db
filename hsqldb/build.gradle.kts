@@ -16,7 +16,7 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 
     runtimeOnly("org.hsqldb:hsqldb:2.6.0")
-    implementation("org.flywaydb:flyway-core:8.0.0")
+    implementation("org.flywaydb:flyway-core:8.0.2")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
