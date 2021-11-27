@@ -8,11 +8,13 @@ buildscript {
 }
 
 plugins {
-    id("org.springframework.boot") version "2.5.6" apply false
+    id("org.springframework.boot") version "2.6.0" apply false
     id("io.spring.dependency-management") version "1.0.11.RELEASE" apply false
-    kotlin("jvm") version "1.5.31" apply false
-    kotlin("plugin.spring") version "1.5.31" apply false
-    kotlin("plugin.jpa") version "1.5.31" apply false
+
+    val kotlinVersion = "1.6.0"
+    kotlin("jvm") version kotlinVersion apply false
+    kotlin("plugin.spring") version kotlinVersion apply false
+    kotlin("plugin.jpa") version kotlinVersion apply false
 
     id("com.github.ben-manes.versions") version "0.39.0"
 }

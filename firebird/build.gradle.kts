@@ -20,7 +20,7 @@ dependencies {
         exclude("net.java.dev.jna:jna")
     }
     implementation("javax.resource:connector-api:1.5")
-    implementation("net.java.dev.jna:jna:5.9.0")
+    implementation("net.java.dev.jna:jna:5.10.0")
     implementation("org.firebirdsql.jdbc:fbclient:4.0.0.0")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
