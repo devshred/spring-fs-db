@@ -7,8 +7,10 @@ buildscript {
     }
 }
 
+val flywayVersion by extra { "8.2.1" }
+
 plugins {
-    id("org.springframework.boot") version "2.6.0" apply false
+    id("org.springframework.boot") version "2.6.1" apply false
     id("io.spring.dependency-management") version "1.0.11.RELEASE" apply false
 
     val kotlinVersion = "1.6.0"

@@ -1,3 +1,5 @@
+val flywayVersion: String by rootProject.extra
+
 plugins {
     id("org.springframework.boot")
     id("io.spring.dependency-management")
@@ -19,7 +21,7 @@ dependencies {
 
     implementation("org.xerial:sqlite-jdbc:3.36.0.3")
 //    implementation("com.github.gwenn:sqlite-dialect:0.1.0")
-    implementation("org.flywaydb:flyway-core:8.1.0")
+    implementation("org.flywaydb:flyway-core:${flywayVersion}")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
