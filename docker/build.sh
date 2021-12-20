@@ -10,8 +10,9 @@ for app in $APPS; do
   case $app in
     'hsqldb') PORT=7001;;
     'h2') PORT=7002;;
-    'sqlite') PORT=7003;;
-    'derby') PORT=7004;;
+    'h2v2') PORT=7003;;
+    'sqlite') PORT=7004;;
+    'derby') PORT=7005;;
     *) echo "app $1 not found";exit 1;;
   esac
 
