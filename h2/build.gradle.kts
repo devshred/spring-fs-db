@@ -17,7 +17,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 
-    runtimeOnly("com.h2database:h2")
+    runtimeOnly("com.h2database:h2:1.4.200")
     implementation("org.flywaydb:flyway-core:${flywayVersion}")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")

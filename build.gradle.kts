@@ -7,13 +7,13 @@ buildscript {
     }
 }
 
-val flywayVersion by extra { "8.2.1" }
+val flywayVersion by extra { "8.2.2" }
 
 plugins {
     id("org.springframework.boot") version "2.6.1" apply false
     id("io.spring.dependency-management") version "1.0.11.RELEASE" apply false
 
-    val kotlinVersion = "1.6.0"
+    val kotlinVersion = "1.6.10"
     kotlin("jvm") version kotlinVersion apply false
     kotlin("plugin.spring") version kotlinVersion apply false
     kotlin("plugin.jpa") version kotlinVersion apply false
@@ -24,6 +24,10 @@ plugins {
 allprojects {
     group = "org.devshred"
     version = "1.0-SNAPSHOT"
+
+    repositories {
+        mavenCentral()
+    }
 
     tasks.withType<JavaCompile> {
         sourceCompatibility = "11"
@@ -43,10 +47,6 @@ allprojects {
 }
 
 subprojects {
-    repositories {
-        mavenCentral()
-    }
-
     apply {
         plugin("io.spring.dependency-management")
     }
@@ -72,7 +72,4 @@ tasks {
             }
         }
     }
-}
-repositories {
-    mavenCentral()
 }
